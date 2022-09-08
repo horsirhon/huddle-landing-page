@@ -59,7 +59,7 @@ section div p {
 section div a {
     display: inline-block;
     text-decoration: none;
-    color: var(--soft-magenta);
+    color: var(--violet);
     background-color: white;
     border-radius: 3rem;
     border-radius: 3rem;
