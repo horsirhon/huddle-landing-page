@@ -18,6 +18,7 @@ body {
     background-image: url(images/bg-mobile.svg);
     background-size: 100vw auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     display: flex;
     flex-direction: column;
