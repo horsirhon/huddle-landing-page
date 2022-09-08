@@ -1,0 +1,163 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --font-bold: 600;
+    --font-light: 400;
+    --font-head: ;
+    --font-body: ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--violet);
+    background-image: url(images/bg-mobile.svg);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2rem 10vw ;
+    font-family: sans-serif;
+}
+header img {
+    width: 140px;
+}
+header {
+    margin-bottom: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section img {
+    width: 80vw;
+    max-width: 30rem;
+}
+section div {
+    margin: 4rem 0 0;
+    text-align: center;
+}
+section div h1 {
+    font-size: calc(1.4rem + .5vw);
+    line-height: 2.2rem;
+}
+section div p {
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+    margin-top: 1.5rem;
+}
+section div a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--soft-magenta);
+    background-color: white;
+    border-radius: 3rem;
+    border-radius: 3rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.401);
+    margin: 2rem 0 5rem;
+    padding: .7rem 4rem .7rem;
+    font-size: 1.1rem;
+}
+section div a:hover {
+    animation: button .1s linear both;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.dot {
+ border: solid 1px white;
+ border-radius: 50%;
+ height: 40px;
+ width: 40px;
+ margin:0 .4rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.dot:hover {
+    animation: socials .1s linear both;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+ion-icon {
+    font-size: 25px;
+    color: inherit;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: auto 100vh;
+        padding: 3rem 5vw;
+    }
+    header img {
+        width: 200px;
+    }
+    section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    section img {
+        width: 50vw;
+        max-width: 670px;
+    }
+    section div {
+        margin: 4rem 0 0 5vw;
+        text-align: left;
+        width: 38vw;
+    }
+    section div h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    section div p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+    section div a {
+        margin: 2rem 0;
+        padding: .8rem 4rem .8rem;
+        font-size: 1.2rem;
+    }
+    footer {
+        justify-content: flex-end;
+    }
+}
+
+@keyframes button {
+    from {
+        background-color: white;
+        color: var(--soft-magenta);
+    }
+    to {
+        background-color: var(--soft-magenta);
+        color: white;
+    }
+}
+@keyframes socials {
+    from {
+        border-color: white;
+        color: white;
+    }
+    to {
+        border-color: var(--soft-magenta);
+        color: var(--soft-magenta);
+    }
+}
